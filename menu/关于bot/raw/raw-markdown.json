@@ -1,0 +1,78 @@
+{
+    "msg_type": 2,
+    "msg_id": "${session.messageId}",
+    "event_id": "${INTERACTION_CREATE}",
+    "markdown": {
+        "content": "${markdown}"
+    },
+    "keyboard": {
+        "content": {
+            "rows": [
+                {
+                    "buttons": [
+                        {
+                            "render_data": {
+                                "label": "🎲 玩玩别的",
+                                "style": 1
+                            },
+                            "action": {
+                                "type": 2,
+                                "permission": {
+                                    "type": 2
+                                },
+                                "data": "/帮助菜单",
+                                "enter": true
+                            }
+                        },
+                        {
+                            "render_data": {
+                                "label": "ℹ️ 关于bot",
+                                "style": 1
+                            },
+                            "action": {
+                                "type": 2,
+                                "permission": {
+                                    "type": 2
+                                },
+                                "data": "/关于bot",
+                                "enter": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buttons": [
+                        {
+                            "render_data": {
+                                "label": "🎯进群交流",
+                                "style": 1
+                            },
+                            "action": {
+                                "type": 0,
+                                "permission": {
+                                    "type": 2
+                                },
+                                "data": "https://qm.qq.com/q/LOODJpXbGi",
+                                "enter": true
+                            }
+                        },
+                        {
+                            "render_data": {
+                                "label": "🎉拉bot进群",
+                                "style": 1
+                            },
+                            "action": {
+                                "type": 0,
+                                "permission": {
+                                    "type": 2
+                                },
+                                "data": "https://qun.qq.com/qunpro/robot/share?robot_appid=102513925",
+                                "enter": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
