@@ -12,7 +12,7 @@
                     "buttons": [
                         {
                             "render_data": {
-                                "label": "🎲 刷新菜单",
+                                "label": "🎲 根菜单",
                                 "style": 1
                             },
                             "action": {
