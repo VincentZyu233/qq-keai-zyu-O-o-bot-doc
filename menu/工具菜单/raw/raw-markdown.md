@@ -17,5 +17,10 @@
 > 🧐 <qqbot-cmd-input text="/inspect" show="inspect 查看信息"/> ｜ 📊 <qqbot-cmd-input text="/status" show="status 运行状态"/>
 > 💡 inspect 用于查看用户、群聊或消息的详细事件结构；status 用于查看运行状态。
 
+🧩 **消息调试与 Dump 工具**
+> 📝 <qqbot-cmd-input text="/dump-json-md" show="dump-json-md"/> ｜ <qqbot-cmd-input text="/dump-yaml-md" show="dump-yaml-md"/> ｜ <qqbot-cmd-input text="/dump-toml-md" show="dump-toml-md"/>
+> 🖼️ <qqbot-cmd-input text="/dump-json" show="dump-json"/> ｜ <qqbot-cmd-input text="/dump-yaml" show="dump-yaml"/> ｜ <qqbot-cmd-input text="/dump-toml" show="dump-toml"/>
+> 💡 回复任意一条消息并点击对应指令，可序列化导出该消息结构数据。
+
 ![text #500px #500px](https://gh-proxy.org/https://raw.githubusercontent.com/VincentZyu233/VincentZyu233/main/docs/public/mahiro/mahiro-pfp-19.jpg)
 > ⚙️ 实用小工具，助你高效玩机喵(*╹▽╹*)
