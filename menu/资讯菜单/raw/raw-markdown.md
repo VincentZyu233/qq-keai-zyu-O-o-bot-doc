@@ -17,8 +17,8 @@
 > 💡 支持自定义城市与货币代码（如天气 上海、汇率 USD、油价 广东）。
 
 🔥 **多源热榜聚合**
-> 👁️‍🗨️ <qqbot-cmd-input text="/60s.热榜 weibo" show="微博热搜"/> ｜ 📺 <qqbot-cmd-input text="/60s.热榜 bili" show="B站热搜"/> ｜ 💡 <qqbot-cmd-input text="/60s.热榜 zhihu" show="知乎热榜"/>
-> 🎵 <qqbot-cmd-input text="/60s.热榜 douyin" show="抖音热搜"/> ｜ 💻 <qqbot-cmd-input text="/60s.热榜 it-news" show="IT之家热榜"/> ｜ 🔍 <qqbot-cmd-input text="/60s.热榜 baidu" show="百度热搜"/>
+> 👁️‍🗨️ <qqbot-cmd-input text="/60s.热榜.weibo" show="微博热搜"/> ｜ 📺 <qqbot-cmd-input text="/60s.热榜.bili" show="B站热搜"/> ｜ 💡 <qqbot-cmd-input text="/60s.热榜.zhihu" show="知乎热榜"/>
+> 🎵 <qqbot-cmd-input text="/60s.热榜.douyin" show="抖音热搜"/> ｜ 💻 <qqbot-cmd-input text="/60s.热榜.it-rank" show="IT之家热榜"/> ｜ 🔍 <qqbot-cmd-input text="/60s.热榜.baidu" show="百度热搜"/>
 
 🎉 **趣味小工具**
 > 💬 <qqbot-cmd-input text="/60s.一言" show="每日一言"/> ｜ 📖 <qqbot-cmd-input text="/60s.答案" show="答案之书"/> ｜ 📚 <qqbot-cmd-input text="/60s.百科" show="今日百科"/> ｜ 🌐 <qqbot-cmd-input text="/60s.翻译 hello" show="智能翻译"/>
