@@ -20,6 +20,14 @@
 > 👁️‍🗨️ <qqbot-cmd-input text="/60s.热榜.weibo" show="微博热搜"/> ｜ 📺 <qqbot-cmd-input text="/60s.热榜.bili" show="B站热搜"/> ｜ 💡 <qqbot-cmd-input text="/60s.热榜.zhihu" show="知乎热榜"/>
 > 🎵 <qqbot-cmd-input text="/60s.热榜.douyin" show="抖音热搜"/> ｜ 💻 <qqbot-cmd-input text="/60s.热榜.it-rank" show="IT之家热榜"/> ｜ 🔍 <qqbot-cmd-input text="/60s.热榜.baidu" show="百度热搜"/>
 
+🏁 **多平台竞赛查询**
+> 🌐 <qqbot-cmd-input text="/contest.all" show="全部比赛"/> ｜ 🔎 <qqbot-cmd-input text="/contest.list cf" show="Codeforces"/> ｜ 🧩 <qqbot-cmd-input text="/contest.list nc" show="牛客"/> ｜ 🧠 <qqbot-cmd-input text="/contest.list lc" show="LeetCode"/> ｜ 🌲 <qqbot-cmd-input text="/contest.list lg" show="洛谷"/> ｜ 🎯 <qqbot-cmd-input text="/contest.list atc" show="AtCoder"/>
+> 💡 支持 Codeforces、牛客、LeetCode、洛谷、AtCoder 未来赛事查询。
+
+🎵 **术力口周榜**
+> 🎵 <qqbot-cmd-input text="/周榜" show="最新周榜"/> ｜ 📜 <qqbot-cmd-input text="/周榜.历史" show="历史期数"/> ｜ 🔍 <qqbot-cmd-input text="/周榜.查歌 关键词" show="查歌"/> ｜ 🧭 <qqbot-cmd-input text="/周榜.帮助" show="使用帮助"/> ｜ ♻️ <qqbot-cmd-input text="/周榜.刷新" show="刷新数据"/>
+> 💡 支持按期数查看、按关键词搜歌；简写别名为 bb、bb.history、bb.search、bb.reload。
+
 🎉 **趣味小工具**
 > 💬 <qqbot-cmd-input text="/60s.一言" show="每日一言"/> ｜ 📖 <qqbot-cmd-input text="/60s.答案" show="答案之书"/> ｜ 📚 <qqbot-cmd-input text="/60s.百科" show="今日百科"/> ｜ 🌐 <qqbot-cmd-input text="/60s.翻译 hello" show="智能翻译"/>
 
