@@ -25,6 +25,18 @@
 
 ---
 
+## 🧩 插件生态与开源仓库
+
+可爱zyu的bot 所搭载的自研拓展、生态定制插件以及各类魔改 Fork 模块，均已在开源社区公开归档维护：
+
+- 👤 个人开源主页：[@VincentZyu233 Repositories](https://github.com/VincentZyu233?tab=repositories)
+- 🏢 专属应用组织：[@VincentZyuApps Repositories](https://github.com/orgs/VincentZyuApps/repositories)
+
+> 💡 **想要查看所有插件的详细功能说明与对应代码仓库？**  
+> 请点击访问在线文档的 [👉 🧩 插件生态与源码全景表](https://vincentzyu233.github.io/qq-keai-zyu-O-o-bot-doc/plugins) 查看完整清单与双端（GitHub / Gitee）仓库直达链接。
+
+---
+
 ## 🛠️ 本地开发与构建
 
 ```bash

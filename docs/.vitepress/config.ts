@@ -14,6 +14,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '📱 交互菜单演示', link: '/menus' },
+      { text: '🧩 插件源码', link: '/plugins' },
       { text: '📖 免艾特设置指南', link: '/guide' },
       { text: '🐧 一键拉Bot进群', link: 'https://bot.q.qq.com/s/wItKEI8kSs' }
     ],
