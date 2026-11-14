@@ -65,7 +65,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { withBase } from 'vitepress'
 import { MENUS_DATA } from '../menus-data'
 
@@ -77,7 +77,7 @@ const props = withDefaults(
     avatarUrl?: string
   }>(),
   {
-    initialMenu: 'cs2菜单',
+    initialMenu: '帮助菜单',
     showTabs: true,
     botName: '可爱zyu的bot',
     avatarUrl: '/images/bot-avatar-v2.png'
@@ -87,13 +87,13 @@ const props = withDefaults(
 const resolvedAvatar = computed(() => withBase(props.avatarUrl))
 
 const menuList = [
+  { key: '帮助菜单', label: '📋 帮助导览' },
   { key: 'cs2菜单', label: '🎮 Steam & CS2' },
   { key: '资讯菜单', label: '📰 资讯行情' },
   { key: '工具菜单', label: '🛠️ 工具与市场' },
-  { key: '帮助菜单', label: '📋 帮助导览' },
   { key: 'Minecraft菜单', label: '🎮 Minecraft' },
   { key: '光遇菜单', label: '🕊️ 光遇' },
-  { key: '绘图菜单', label: '🎨 绘图' },
+  { key: '绘图菜单', label: '🎨 绘图整活' },
   { key: '点歌菜单', label: '🎵 点歌' },
   { key: '关于bot', label: 'ℹ️ 关于' }
 ]
@@ -105,6 +105,53 @@ let toastTimer: any = null
 
 function switchMenu(key: string) {
   currentMenuKey.value = key
+}
+
+function findMatchingMenu(cmd: string): string | null {
+  const clean = cmd.trim().replace(/^\//, '').trim().toLowerCase()
+  if (!clean) return null
+
+  // 1. 完全或不区分大小写匹配已有菜单键
+  for (const m of menuList) {
+    if (m.key.toLowerCase() === clean) return m.key
+  }
+
+  // 2. 匹配已有菜单 key 包含或被包含
+  for (const m of menuList) {
+    const mk = m.key.toLowerCase()
+    if (clean.includes(mk) || mk.includes(clean)) return m.key
+  }
+
+  // 3. 常见指令别名与快捷关键字
+  if (clean === 'help' || clean.includes('帮助') || clean === 'menu') return '帮助菜单'
+  if (clean.includes('关于') || clean === 'about') return '关于bot'
+  if (clean.includes('cs2') || clean.includes('steam')) return 'cs2菜单'
+  if (clean.includes('mc') || clean.includes('minecraft')) return 'Minecraft菜单'
+  if (clean.includes('光遇') || clean.includes('sky')) return '光遇菜单'
+  if (clean.includes('资讯') || clean.includes('news')) return '资讯菜单'
+  if (clean.includes('工具') || clean.includes('tool')) return '工具菜单'
+  if (clean.includes('绘图') || clean.includes('整活') || clean.includes('draw')) return '绘图菜单'
+  if (clean.includes('点歌') || clean.includes('music')) return '点歌菜单'
+
+  return null
+}
+
+function handleCommandTrigger(cmd: string) {
+  // 复制到剪贴板
+  if (navigator.clipboard?.writeText) {
+    navigator.clipboard.writeText(cmd).catch(() => {})
+  }
+
+  // 检查是否跳转到对应菜单
+  const matchedMenuKey = findMatchingMenu(cmd)
+  if (matchedMenuKey && (MENUS_DATA as any)[matchedMenuKey]) {
+    switchMenu(matchedMenuKey)
+    const matched = menuList.find(m => m.key === matchedMenuKey)
+    const label = matched ? matched.label : matchedMenuKey
+    showToast(`已切换至 ${label} 并复制指令`)
+  } else {
+    showToast(`已复制指令: ${cmd}`)
+  }
 }
 
 const currentMenuData = computed(() => {
@@ -123,7 +170,7 @@ const renderedHtml = computed(() => {
   // 1. 转义基础标签但保留我们的组件
   // 替换 <qqbot-cmd-input text="..." show="..."/> 为可点击标签
   md = md.replace(/<qqbot-cmd-input\s+text="([^"]+)"\s+show="([^"]+)"\s*\/?>/g, (match: string, text: string, show: string) => {
-    return `<span class="qq-cmd-input" data-cmd="${escapeAttr(text)}" title="点击复制指令: ${escapeAttr(text)}">${escapeHtml(show)}</span>`
+    return `<span class="qq-cmd-input" data-cmd="${escapeAttr(text)}" title="点击跳转并复制: ${escapeAttr(text)}">${escapeHtml(show)}</span>`
   })
 
   // 2. 简易安全的 Markdown 解析器
@@ -211,29 +258,25 @@ function handleButtonClick(btn: any) {
     window.open(action.data, '_blank')
   } else if (action?.type === 2 && action?.data) {
     const cmd = action.data.trim()
-    if (cmd.startsWith('/')) {
-      const matchMenu = menuList.find(m => cmd.includes(m.key))
-      if (matchMenu) {
-        switchMenu(matchMenu.key)
-        showToast(`已切换至: ${matchMenu.label}`)
-        return
-      }
-    }
-    navigator.clipboard?.writeText(cmd)
-    showToast(`已复制按钮指令: ${cmd}`)
+    handleCommandTrigger(cmd)
+  }
+}
+
+function handleGlobalClick(e: MouseEvent) {
+  const target = (e.target as HTMLElement)?.closest('.qq-cmd-input') as HTMLElement
+  if (target && target.dataset.cmd) {
+    const cmd = target.dataset.cmd
+    handleCommandTrigger(cmd)
   }
 }
 
 // 代理事件委托处理蓝字点击
 onMounted(() => {
-  document.addEventListener('click', (e) => {
-    const target = (e.target as HTMLElement)?.closest('.qq-cmd-input') as HTMLElement
-    if (target && target.dataset.cmd) {
-      const cmd = target.dataset.cmd
-      navigator.clipboard?.writeText(cmd)
-      showToast(`已复制指令: ${cmd}`)
-    }
-  })
+  document.addEventListener('click', handleGlobalClick)
+})
+
+onUnmounted(() => {
+  document.removeEventListener('click', handleGlobalClick)
 })
 </script>
 
