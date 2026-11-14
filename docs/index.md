@@ -36,12 +36,12 @@ features:
 
 <div class="hero-badges-wrapper">
   <div class="hero-avatar-box">
-    <img src="/images/bot-avatar-v2.png" alt="当前正式头像" class="hero-avatar-img" />
-    <span class="hero-avatar-label">✨ 当前正式头像</span>
+    <img src="/images/bot-avatar-v2.png" alt="grok bot风格头像" class="hero-avatar-img" />
+    <span class="hero-avatar-label">✨ grok bot风格头像</span>
   </div>
   <div class="hero-avatar-box">
-    <img src="/images/bot-avatar-v1.png" alt="早期版本头像" class="hero-avatar-img legacy" />
-    <span class="hero-avatar-label">📦 早期纪念头像</span>
+    <img src="/images/bot-avatar-v1.png" alt="早期动漫手绘风头像" class="hero-avatar-img legacy" />
+    <span class="hero-avatar-label">🎨 早期动漫手绘风头像</span>
   </div>
 </div>
 
