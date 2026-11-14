@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+.yarn/
+*.lock
+
+# VitePress Build
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# Environment Variables & Secrets
+.env
+scripts/.env
+*.env.local
+
+# System & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

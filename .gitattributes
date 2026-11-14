@@ -1,0 +1,17 @@
+* text=auto eol=lf
+
+# GitHub Linguist language statistics overrides
+# Include Markdown, Vue, TypeScript, JavaScript, CSS, and JSON in language statistics
+*.md linguist-detectable=true linguist-documentation=false
+*.markdown linguist-detectable=true linguist-documentation=false
+README.md linguist-detectable=true linguist-documentation=false
+readme.md linguist-detectable=true linguist-documentation=false
+
+*.vue linguist-detectable=true linguist-documentation=false
+*.ts linguist-detectable=true linguist-documentation=false
+*.js linguist-detectable=true linguist-documentation=false linguist-vendored=false
+*.css linguist-detectable=true linguist-documentation=false
+*.json linguist-detectable=true linguist-documentation=false
+
+# Scripts directory override (prevent scripts/ from being treated as vendored/documentation)
+scripts/** linguist-detectable=true linguist-documentation=false linguist-vendored=false
