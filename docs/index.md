@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "可爱zyu的bot"
-  text: "QQ 官方机器人 · 全量 Markdown 互动"
+  text: "QQ官方机器人"
   tagline: "一个集游戏辅助、生活行情、实用工具、趣味互动于一身的可爱 Bot"
   image:
     src: /images/bot-avatar-v2.png
