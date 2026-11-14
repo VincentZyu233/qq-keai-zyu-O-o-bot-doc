@@ -12,6 +12,10 @@
 > 🧐 <qqbot-cmd-input text="/inspect" show="inspect 查看信息"/> ｜ 📊 <qqbot-cmd-input text="/status" show="status 运行状态"/>
 > 💡 inspect 用于查看用户、群聊或消息的详细事件结构；status 用于查看运行状态。
 
+🛒 **Koishi 插件市场**
+> 📦 <qqbot-cmd-input text="/market" show="🛒 插件市场首页"/> ｜ 🔍 <qqbot-cmd-input text="/market qq" show="🔍 搜索QQ相关插件"/>
+> 💡 全网 4800+ 插件索引检索，支持多镜像源切换与微信/QQ小程序直达。
+
 🧩 **消息调试与 Dump 工具**
 > 📝 <qqbot-cmd-input text="/dump-json-md" show="dump-json-md"/> ｜ <qqbot-cmd-input text="/dump-yaml-md" show="dump-yaml-md"/> ｜ <qqbot-cmd-input text="/dump-toml-md" show="dump-toml-md"/>
 > 🖼️ <qqbot-cmd-input text="/dump-json" show="dump-json"/> ｜ <qqbot-cmd-input text="/dump-yaml" show="dump-yaml"/> ｜ <qqbot-cmd-input text="/dump-toml" show="dump-toml"/>

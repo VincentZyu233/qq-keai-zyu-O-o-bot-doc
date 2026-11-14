@@ -13,8 +13,9 @@
 > 💡 一览今日国内外重点新闻、历史今日大事件与摸鱼小贴士。
 
 🌤️ **生活与实用行情**
-> 🌤️ <qqbot-cmd-input text="/60s.天气 上海" show="实时天气"/> ｜ 💱 <qqbot-cmd-input text="/60s.汇率 USD" show="外汇汇率"/> ｜ 🪙 <qqbot-cmd-input text="/60s.金价" show="实时金价"/> ｜ ⛽ <qqbot-cmd-input text="/60s.油价 上海" show="今日油价"/>
-> 💡 支持自定义城市与货币代码（如天气 上海、汇率 USD、油价 广东）。
+> 🌤️ <qqbot-cmd-input text="/60s.天气 上海" show="实时天气"/> ｜ 💱 <qqbot-cmd-input text="/60s.汇率 USD" show="外汇汇率"/> ｜ ⛽ <qqbot-cmd-input text="/60s.油价 上海" show="今日油价"/>
+> 🪙 <qqbot-cmd-input text="/gold" show="💰 招行实时金价"/> ｜ 📈 <qqbot-cmd-input text="/gold-image 7 d" show="📈 7日走势图"/> ｜ 📊 <qqbot-cmd-input text="/gold-image 30 d" show="📊 30日走势图"/>
+> 💡 招行实时金价支持买卖报价与价差；走势图支持指定时间跨度（如 1d、7d、30d）。
 
 🔥 **多源热榜聚合**
 > 👁️‍🗨️ <qqbot-cmd-input text="/60s.热榜.weibo" show="微博热搜"/> ｜ 📺 <qqbot-cmd-input text="/60s.热榜.bili" show="B站热搜"/> ｜ 💡 <qqbot-cmd-input text="/60s.热榜.zhihu" show="知乎热榜"/>
@@ -25,8 +26,9 @@
 > 💡 支持 Codeforces、牛客、LeetCode、洛谷、AtCoder 未来赛事查询。
 
 🎵 **术力口周榜**
-> 🎵 <qqbot-cmd-input text="/周榜" show="最新周榜"/> ｜ 📜 <qqbot-cmd-input text="/周榜.历史" show="历史期数"/> ｜ 🔍 <qqbot-cmd-input text="/周榜.查歌 关键词" show="查歌"/> ｜ 🧭 <qqbot-cmd-input text="/周榜.帮助" show="使用帮助"/> ｜ ♻️ <qqbot-cmd-input text="/周榜.刷新" show="刷新数据"/>
-> 💡 支持按期数查看、按关键词搜歌；简写别名为 bb、bb.history、bb.search、bb.reload。
+> 📺 <qqbot-cmd-input text="/周榜b" show="bili周榜"/> ｜ 🎵 <qqbot-cmd-input text="/周榜n" show="nico周榜"/>
+> 📜 <qqbot-cmd-input text="/周榜.历史" show="历史期数"/> ｜ 🔍 <qqbot-cmd-input text="/周榜.查歌 关键词" show="查歌"/> ｜ 🧭 <qqbot-cmd-input text="/周榜.帮助" show="使用帮助"/> ｜ ♻️ <qqbot-cmd-input text="/周榜.刷新" show="刷新数据"/>
+> 💡 支持按期数查看、按关键词搜歌；简写别名为 bbb、nbb、bb、bb.history、bb.search、bb.reload。
 
 🎉 **趣味小工具**
 > 💬 <qqbot-cmd-input text="/60s.一言" show="每日一言"/> ｜ 📖 <qqbot-cmd-input text="/60s.答案" show="答案之书"/> ｜ 📚 <qqbot-cmd-input text="/60s.百科" show="今日百科"/> ｜ 🌐 <qqbot-cmd-input text="/60s.翻译 hello" show="智能翻译"/>
