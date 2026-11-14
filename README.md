@@ -8,9 +8,11 @@
 
 ## 📸 站点与交互预览
 
-| 🏠 首页全局视图与功能矩阵 | 📱 1:1 仿真 Markdown 菜单交互 |
-| :---: | :---: |
-| <img src="preview/preview.homepage.png" alt="首页全局视图" width="480" /> | <img src="preview/preview.menu.png" alt="仿真菜单交互" width="480" /> |
+### 🏠 首页全局视图与功能矩阵
+![首页全局视图](preview/preview.homepage.png)
+
+### 📱 1:1 仿真 Markdown 菜单交互
+![仿真菜单交互](preview/preview.menu.png)
 
 ---
 
