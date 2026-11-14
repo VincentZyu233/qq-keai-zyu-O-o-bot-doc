@@ -21,17 +21,29 @@ hero:
 
 features:
   - icon: 🎮
-    title: Steam & CS2 综合互联
-    details: 支持绑定 Steam 账号、查看个人状态卡、近两周游玩、热销榜，以及 CS2 个人战绩与库存直查。
-  - icon: 📈
-    title: 招行实时金价与多源资讯
-    details: 接入招商银行权威行情报价，支持实时买卖价差与走势图；集成 60s 每日早报、多平台热搜与漫展活动查询。
+    title: Steam 社区与游戏库
+    details: 支持绑定多 Steam 账号，查询个人状态卡片、公开游戏库与近两周游玩时长；一键查看 Steam 特惠新品与热销排行榜。
+  - icon: 🔫
+    title: CS2 战绩与实时库存
+    details: 输入 SteamID 一键检索玩家 CS2 个人战绩；实时渲染个人公开库存总览图，支持绑定快捷查询。
+  - icon: ⛏️
+    title: Minecraft 服务器与渲染
+    details: 实时查询 MC 服务器（JE/BE）MOTD 运行状态与在线人数；支持玩家皮肤 3D 渲染、自定成就图生成及 OpenBMCLAPI 监控。
   - icon: 🕊️
-    title: 光遇与 Minecraft 垂直生态
-    details: 支持光遇每日任务、祈福抽签、Sky Shards 碎片喷发预报；MC 皮肤渲染、服务器状态与 OpenBMCLAPI 监控。
-  - icon: 💬
-    title: 1:1 官方 Markdown 按钮交互
-    details: 全量适配 QQ 官方机器人 Markdown 蓝字指令输入与交互式底栏键盘，轻点即玩，零风控隐患。
+    title: 光遇任务与碎片预报
+    details: 同步每日国服四大任务与大蜡烛位置；集成每日祈福签、光翼数量查询，以及 Sky Shards 碎片喷发事件精准预报。
+  - icon: 📰
+    title: 60s API 与全网热点资讯
+    details: 对接 60s 开放 API，涵盖每日早报、多平台热搜榜（微博/B站/知乎/抖音）、实时金价与汇率油价、全国漫展日程及算法竞赛日历。
+  - icon: 🛒
+    title: Koishi 插件生态市场
+    details: 索引全网 4800+ 官方与社区插件，支持多镜像源关键词快速检索；无缝联动微信与 QQ 插件市场小程序，移动端一键直达。
+  - icon: 🎨
+    title: 绘图创作与声效整活
+    details: 提供 BA 双色 Logo、3D 渲染骰子与图片对称滤镜；搭载鬼畜全明星 Otto 活字印刷电台与哲学 Fa♂ 语音触发词图鉴，创意与生草兼具。
+  - icon: 🎵
+    title: 多平台音乐与点歌服务
+    details: 支持网易云与落月双平台歌曲搜索与点词；支持 SVG、Canvas 与高清图片等多种精美渲染输出，沉浸式群聊声乐体验。
 ---
 
 <div class="hero-badges-wrapper">
