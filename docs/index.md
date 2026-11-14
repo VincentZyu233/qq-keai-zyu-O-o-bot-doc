@@ -59,7 +59,10 @@ features:
 
 <div style="text-align: center; margin: 3rem 0 1rem 0;">
   <h2>📱 真实客户端效果演示（1:1 像素级交互）</h2>
-  <p style="color: var(--vp-c-text-2);">下方为网页端 1:1 模拟的手机 QQ 聊天气泡，点击任意蓝字可体验无缝切换菜单与指令复制：</p>
+  <p style="color: var(--vp-c-text-2); line-height: 1.6;">
+    下方为网页端 1:1 模拟的手机 QQbot 发送的 Markdown 按钮指令菜单聊天气泡<br>
+    点击任意蓝字可体验无缝切换菜单与指令复制：
+  </p>
 </div>
 
 <QQBotMessage initialMenu="帮助菜单" :showTabs="false" />
