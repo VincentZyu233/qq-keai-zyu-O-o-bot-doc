@@ -8,9 +8,9 @@
 > *无需@也可与机器人畅快玩机的方法*
 > 💡 群主可通过申请指令获取配置跳转链接，或查看手Q图文设置指南。
 
-⚙️ **Koishi 自带工具**
-> 🧐 <qqbot-cmd-input text="/inspect" show="inspect 查看信息"/> ｜ 📊 <qqbot-cmd-input text="/status" show="status 运行状态"/>
-> 💡 inspect 用于查看用户、群聊或消息的详细事件结构；status 用于查看运行状态。
+⚙️ **Koishi 自带与系统监控**
+> 🧐 <qqbot-cmd-input text="/inspect" show="inspect 事件结构"/> ｜ 📊 <qqbot-cmd-input text="/status" show="status 文本状态"/> ｜ 🖼️ <qqbot-cmd-input text="/picstatus" show="picstatus 图文监控"/>
+> 💡 inspect 用于查看用户、群聊或消息的事件详情；status / picstatus 分别以文本和精美图文卡片呈现服务器与机器人运行状态。
 
 🛒 **Koishi 插件市场**
 > 📦 <qqbot-cmd-input text="/market" show="🛒 插件市场首页"/> ｜ 🔍 <qqbot-cmd-input text="/market qq" show="🔍 搜索QQ相关插件"/>

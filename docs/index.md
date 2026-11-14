@@ -27,23 +27,23 @@ features:
     title: CS2 战绩与实时库存
     details: 输入 SteamID 一键检索玩家 CS2 个人战绩；实时渲染个人公开库存总览图，支持绑定快捷查询。
   - icon: ⛏️
-    title: Minecraft 服务器与渲染
+    title: Minecraft 垂直生态
     details: 实时查询 MC 服务器（JE/BE）MOTD 运行状态与在线人数；支持玩家皮肤 3D 渲染、自定成就图生成及 OpenBMCLAPI 监控。
   - icon: 🕊️
-    title: 光遇任务与碎片预报
-    details: 同步每日国服四大任务与大蜡烛位置；集成每日祈福签、光翼数量查询，以及 Sky Shards 碎片喷发事件精准预报。
+    title: 光遇 Sky 旅人助手
+    details: 同步每日国服任务与大蜡烛位置；集成每日祈福抽签、光翼查询，以及 Sky Shards 碎片喷发事件精准预报。
   - icon: 📰
-    title: 60s API 与全网热点资讯
+    title: 60s API 与多源资讯
     details: 对接 60s 开放 API，涵盖每日早报、多平台热搜榜（微博/B站/知乎/抖音）、实时金价与汇率油价、全国漫展日程及算法竞赛日历。
   - icon: 🛒
     title: Koishi 插件生态市场
     details: 索引全网 4800+ 官方与社区插件，支持多镜像源关键词快速检索；无缝联动微信与 QQ 插件市场小程序，移动端一键直达。
   - icon: 🎨
     title: 绘图创作与声效整活
-    details: 提供 BA 双色 Logo、3D 渲染骰子与图片对称滤镜；搭载鬼畜全明星 Otto 活字印刷电台与哲学 Fa♂ 语音触发词图鉴，创意与生草兼具。
-  - icon: 🎵
-    title: 多平台音乐与点歌服务
-    details: 支持网易云与落月双平台歌曲搜索与点词；支持 SVG、Canvas 与高清图片等多种精美渲染输出，沉浸式群聊声乐体验。
+    details: 提供 BA 双色 Logo、3D 渲染骰子与图片对称滤镜；搭载鬼畜全明星 Otto 活字印刷发音人与哲学 Fa♂ 语音触发词库，内置电台与语音图鉴，创意与生草兼具。
+  - icon: 🛠️
+    title: 官方 Markdown 互动与工具
+    details: 全量适配 QQ 官方机器人原生 Markdown，支持可点击蓝字直达与交互式底栏键盘；集成免艾特设置指南、picstatus 图文状态监控与消息 Dump。
 ---
 
 <div class="hero-badges-wrapper">
