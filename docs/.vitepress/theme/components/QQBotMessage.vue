@@ -45,7 +45,12 @@
                   class="keyboard-btn"
                   @click="handleButtonClick(btn)"
                 >
-                  {{ btn.render_data?.label }}
+                  <span v-if="btn.action?.type === 0" class="btn-link-icon" title="外部链接">
+                    <svg viewBox="0 0 24 24" class="link-svg">
+                      <path fill="currentColor" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"/>
+                    </svg>
+                  </span>
+                  <span class="btn-label">{{ btn.render_data?.label }}</span>
                 </button>
               </div>
             </div>
@@ -416,15 +421,22 @@ onUnmounted(() => {
   margin: 8px 0;
   padding: 2px 0 2px 10px;
   border-left: 3px solid #d0d7de;
-  color: inherit;
+  color: #57606a;
   background: transparent;
 }
 :root.dark :deep(.qq-blockquote) {
   border-left-color: #3e4451;
+  color: #8b949e;
 }
 :deep(.qq-quote-line), :deep(.qq-p) {
   margin: 4px 0;
   font-size: 13.5px;
+}
+:deep(.qq-quote-line) {
+  color: #57606a;
+}
+:root.dark :deep(.qq-quote-line) {
+  color: #8b949e;
 }
 :deep(.qq-divider) {
   color: #a0aec0;
@@ -434,8 +446,7 @@ onUnmounted(() => {
   font-style: normal;
   font-size: 12px;
   color: #64748b;
-  display: block;
-  margin: 2px 0;
+  display: inline;
 }
 :root.dark :deep(em) {
   color: #94a3b8;
@@ -515,6 +526,19 @@ onUnmounted(() => {
   background: #2d333b;
   color: #cdd9e5;
   border-color: #444c56;
+}
+.btn-link-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+  color: #0099ff;
+}
+:root.dark .btn-link-icon {
+  color: #38bdf8;
+}
+.link-svg {
+  width: 13px;
+  height: 13px;
 }
 
 /* 轻量 Toast 提示 */
